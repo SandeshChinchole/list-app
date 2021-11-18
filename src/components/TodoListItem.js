@@ -1,7 +1,7 @@
 import React from "react";
 import moment from "moment";
 
-const Todo = (props) => {
+const TodoListItem = (props) => {
 
   const date = moment().format("ll")
 
@@ -31,4 +31,4 @@ const Todo = (props) => {
 }
   
 
-export default Todo;
+export default TodoListItem;

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import Todo from "./components/Todo";
-import Form from "./components/Form";
+import TodoHeader from "./components/TodoHeader";
+import Timer from "./components/Timer";
+import TodoForm from "./components/TodoForm";
+import TodoListItem from "./components/TodoListItem";
 import FilterButton from "./components/FilterButton";
 import { nanoid } from "nanoid";
-import Timer from "./components/Timer";
+
 
 const filterButtons = {
   All: () => true,
@@ -41,7 +43,7 @@ const App = (props) => {
   const todoList = tasks
   .filter(filterButtons[filter])
   .map(task => (
-    <Todo 
+    <TodoListItem 
       id={task.id} 
       name={task.name} 
       completed={task.completed} 
@@ -62,9 +64,9 @@ const App = (props) => {
 
   return (
     <div id="main">
-      <h1>Todo List</h1>
+      <TodoHeader />
       <Timer />
-      <Form addTask={addTask} />
+      <TodoForm addTask={addTask} />
       <div className="filter-buttons">
         {filterButtonList}
       </div>
