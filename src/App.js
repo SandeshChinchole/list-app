@@ -13,7 +13,7 @@ const filterButtons = {
 
 const filterButtonNames = Object.keys(filterButtons);
 
-function App(props) {
+const App = (props) => {
 
   const [filter, setFilter] = useState("All");
   const [tasks, setTasks] = useState(props.tasks);

@@ -4,11 +4,11 @@ const Timer = () => {
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
-  function toggle() {
+  const toggle = () => {
     setIsActive(!isActive);
   }
 
-  function reset() {
+  const reset = () => {
     setSeconds(0);
     setIsActive(false);
   }
@@ -31,7 +31,7 @@ const Timer = () => {
       <div className="time">
         {seconds}s
       </div>
-      <div className="row">
+      <div className="timer-controls">
         <button 
           type="button"
           className={`btn btn-default-${isActive ? 'active' : 'inactive'}`} 
