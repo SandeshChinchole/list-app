@@ -7,7 +7,7 @@ Refactoring:
 3. Employed functional components for better code readability and maintainability.
 4. Utilized modern React Hooks APIs to use state within functional components.
 5. Refactored old JavaScript code with Modern ES6+ code.
-6. Fixed a bug that would cause the task text to overflow.
+6. Fixed a bug that caused the task text to overflow.
 
 ## To run this project
 
@@ -19,5 +19,4 @@ Step 2: Run the project
 
 ### `npm start`
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
