@@ -4,10 +4,9 @@ Refactoring:
 
 1. Reorganized the application code by extracting out the components into separate files under "components" directory.
 2. Prioritized code reusability, semantic organization and reducing code verbosity by replacing React legacy class components with new functional components.  
-3. Employed functional components for better code readability and maintainability.
-4. Utilized modern React Hooks APIs to use state within functional components.
-5. Refactored old JavaScript code with Modern ES6+ code.
-6. Fixed a bug that caused the task text to overflow.
+3. Utilized modern React Hooks APIs to use state within functional components.
+4. Refactored old JavaScript code with Modern ES6+ code.
+5. Fixed a bug that caused the task text to overflow.
 
 ## To run this project
 
